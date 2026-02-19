@@ -1,0 +1,241 @@
+/* ── REINICIO GENERAL ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── VARIABLES DE COLOR ── */
+:root {
+  --fondo:       #0d0f14;
+  --superficie:  #141720;
+  --acento:      #e8c97e;
+  --acento2:     #5b8dd9;
+  --texto:       #f0eeea;
+  --tenue:       #8a8fa0;
+}
+
+/* ── CUERPO ── */
+body {
+  background: var(--fondo);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── ENCABEZADO ── */
+header {
+  position: relative;
+  overflow: hidden;
+  background: var(--superficie);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Gradientes decorativos de fondo */
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(91, 141, 217, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 20%, rgba(232, 201, 126, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Contenedor interno del encabezado */
+#encabezado {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 48px;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+/* ── BLOQUE DE TEXTO ── */
+.texto-encabezado {
+  flex: 1;
+  animation: aparecerArriba 0.7s ease both;
+}
+
+/* Etiqueta pequeña superior */
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--acento);
+  margin-bottom: 18px;
+}
+
+/* Línea decorativa antes de la etiqueta */
+.etiqueta::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--acento);
+}
+
+/* Título principal */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--texto);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+/* Palabra resaltada en el título */
+h1 span {
+  color: var(--acento);
+}
+
+/* Párrafo de presentación */
+.texto-encabezado p {
+  color: var(--tenue);
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 300;
+  max-width: 480px;
+}
+
+/* Nombre resaltado dentro del párrafo */
+.texto-encabezado p strong {
+  color: var(--texto);
+  font-weight: 500;
+}
+
+/* ── BOTONES ── */
+.fila-botones {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Estilos base compartidos por todos los botones */
+.boton {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+/* Botón principal con relleno dorado */
+.boton-principal {
+  background: var(--acento);
+  color: #0d0f14;
+  border: none;
+}
+
+.boton-principal:hover {
+  background: #f0d899;
+  transform: translateY(-1px);
+}
+
+/* Botón fantasma solo con borde */
+.boton-fantasma {
+  background: transparent;
+  color: var(--texto);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.boton-fantasma:hover {
+  border-color: var(--acento);
+  color: var(--acento);
+}
+
+/* ── BLOQUE DE IMAGEN ── */
+#imagenes {
+  flex-shrink: 0;
+  animation: aparecerArriba 0.7s 0.15s ease both;
+}
+
+/* Marco contenedor de la foto */
+.contenedor-foto {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  padding-bottom: 45px;
+}
+
+/* Marco decorativo desplazado detrás de la foto */
+.contenedor-foto::before {
+  content: '';
+  position: absolute;
+  inset: -10px -10px 10px 10px;
+  border: 2px solid var(--acento);
+  border-radius: 16px;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+/* El marco se vuelve más visible al pasar el mouse */
+.contenedor-foto:hover::before {
+  opacity: 0.8;
+}
+
+/* La foto de presentación */
+#fotoPresentacion {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Placeholder que aparece si la foto no carga */
+.foto-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e2230 0%, #252a3a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--tenue);
+  font-size: 0.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.foto-placeholder svg {
+  opacity: 0.4;
+}
+
+/* ── ANIMACIÓN DE ENTRADA ── */
+@keyframes aparecerArriba {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── DISEÑO RESPONSIVO PARA MÓVIL ── */
+@media (max-width: 680px) {
+  #encabezado {
+    flex-direction: column-reverse;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .contenedor-foto {
+    width: 160px;
+    height: 190px;
+  }
+}

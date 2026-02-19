@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Presentacion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div id="encabezado">
+
+      <!-- Bloque de texto principal -->
+      <div class="texto-encabezado">
+        <span class="etiqueta">Portafolio Personal</span>
+        <h1>Bienvenido a mi<br><span>Página Personal</span></h1>
+        <p>
+          Hola, soy <strong>Santiago Enrique Bastidas Estrada</strong>, un apasionado de la tecnología
+          y el desarrollo web. Aquí encontrarás mis proyectos, habilidades y experiencia profesional.
+          ¡Gracias por visitar!
+        </p>
+
+        <!-- Botones de navegación -->
+        <div class="fila-botones">
+          <a href="#proyectos" class="boton boton-principal">Ver proyectos</a>
+          <a href="#contacto" class="boton boton-fantasma">Contacto</a>
+        </div>
+      </div>
+
+      <!-- Bloque de imagen -->
+      <div id="imagenes">
+        <div class="contenedor-foto">
+          <img src="./Imagenes/fotoPresentacion.png" alt="Foto de Santiago"
+               id="fotoPresentacion"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <!-- Placeholder si la imagen no carga -->
+          <div class="foto-placeholder" style="display:none;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            Tu foto aquí
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+</body>
+</html>
