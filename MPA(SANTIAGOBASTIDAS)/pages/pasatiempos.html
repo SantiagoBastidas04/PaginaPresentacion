@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Curriculum Vitae - Santiago Bastidas" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <title>Santiago Bastidas - Hobbies</title>
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <header class="masthead">
+            <div id="navegacionTitulo">
+                <nav class="barraNav" id="mainNav">
+                    <div class="nav-inner">
+                        <ul class="nav-links">
+                            <li><a href="..\index.html">Inicio</a></li>
+                            <li><a href="about.html">Acerca de mí</a></li>
+                            <li><a href="estudios.html">Estudios</a></li>
+                            <li><a href="pasatiempos.html">Mis Hobbies</a></li>
+                            <li><a href="proyectos.html">Proyectos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hobbies-content">
+            <h2>Mis hobbies</h2>
+
+            <div class="gridFutbol">
+                <div class="mi-carrusel" id="carouselPasto">
+                    <div class="mi-carrusel-track">
+                        <img src="../assets/img/h1.1.png" alt="Primera Imagen">
+                        <img src="../assets/img/h1.2.png" alt="Segunda Imagen">
+                        <img src="../assets/img/h1.3.png" alt="Tercera Imagen">
+                    </div>
+                    <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselPasto', -1)">&#8249;</button>
+                    <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselPasto', 1)">&#8250;</button>
+                </div>
+                <p>
+                    Soy apasionado por el fútbol e hincha fiel del Deportivo Pasto.
+                    Sigo al equipo desde 2019 y disfruto ir al estadio a apoyarlos con la barra.
+                </p>
+            </div>
+
+            <div class="gridGym">
+                <p>
+                    Disfruto mucho de la actividad física, especialmente del entrenamiento de fuerza.
+                    El gimnasio es mi espacio para desafiarme y mejorar mi rendimiento día a día.
+                </p>
+                <img src="../assets/img/h2.png" alt="Gym">
+            </div>
+
+            <div class="gridBox">
+                <img src="../assets/img/h3.png" alt="Boxeo">
+                <p>
+                    Me apasiona el boxeo, tanto practicarlo como ver peleas.
+                    Valoro la disciplina y la técnica que exige este deporte de contacto.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <p>Universidad Del Cauca - Ingenieria de Sistemas</p>
+            </div>
+        </footer>
+        <script src="..\js\scripts.js"></script>
+    </body>
+</html>

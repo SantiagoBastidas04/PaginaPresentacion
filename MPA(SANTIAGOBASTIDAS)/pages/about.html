@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Curriculum Vitae - Santiago Bastidas" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Santiago Bastidas - Acerca de mi</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    
+</head>
+
+<body id="page-top">
+    <header class="masthead">
+        <div id="navegacionTitulo">
+            <nav class="barraNav" id="mainNav">
+                <div class="nav-inner">
+                    <ul class="nav-links">
+                        <li><a href="..\index.html">Inicio</a></li>
+                        <li><a href="about.html">Acerca de mí</a></li>
+                        <li><a href="estudios.html">Estudios</a></li>
+                        <li><a href="pasatiempos.html">Mis Hobbies</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="about-content">
+        <h2>Acerca de mi</h2>
+        <p>
+            21 años <br>
+            06/08/2004
+        </p>
+        <p>
+            <br>
+            Soy un desarrollador en formación apasionado por la creación de aplicaciones web modernas y funcionales,
+            con especial interés en el desarrollo frontend y backend, combinando diseño y lógica para construir
+            experiencias atractivas.
+            <br><br>
+            Actualmente estudio Ingeniería de Sistemas en la Universidad del Cauca,
+            donde he adquirido una sólida base en programación, algoritmos y estructuras de datos.
+            <br><br>
+            Mi objetivo es seguir creciendo como desarrollador, explorando nuevas tecnologías
+            y contribuyendo a proyectos con impacto positivo en la sociedad.
+        </p>
+        <div class="mi-carrusel" id="carouselMe">
+            <div class="mi-carrusel-track">
+                <img src="../assets/img/presentacion1.JPG" alt="Primera Imagen">
+                <img src="../assets/img/presentacion2.png" alt="Segunda Imagen">
+                <img src="../assets/img/presentacion3.JPG" alt="Tercera Imagen">
+            </div>
+            <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselMe', -1)">&#8249;</button>
+            <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselMe', 1)">&#8250;</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+        <p> Universidad Del Cauca - Ingenieria de Sistemas </p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js" ></script>
+</body>
+
+</html>
