@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Curriculum Vitae - Santiago Bastidas" />
+    <title>Santiago Bastidas - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Mis Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contáctame</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INICIO -->
+    <section id="inicio">
+        <h1>SANTIAGO ENRIQUE BASTIDAS ESTRADA</h1>
+        <div class="linea-decorativa"></div>
+        <p class="subtitulo">Ingeniería de Sistemas — Universidad del Cauca</p>
+    </section>
+
+    <!-- ACERCA DE MÍ -->
+    <section id="acerca">
+        <div class="container">
+            <div class="titulo-wrapper animar">
+                <h2 class="seccion-titulo">Acerca de mí</h2>
+                <span class="titulo-linea"></span>
+            </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animar-izq">
+                    <div class="mi-carrusel" id="carouselMe">
+                        <div class="mi-carrusel-track">
+                            <img src="assets/img/presentacion1.JPG" alt="Foto 1">
+                            <img src="assets/img/presentacion2.png" alt="Foto 2">
+                            <img src="assets/img/presentacion3.JPG" alt="Foto 3">
+                        </div>
+                        <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselMe', -1)">&#8249;</button>
+                        <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselMe', 1)">&#8250;</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 animar-der">
+                    <p style="color: var(--text-muted); font-size: 0.78rem; letter-spacing: 3px; margin-bottom: 20px; font-family: 'Bebas Neue', cursive;">
+                        21 AÑOS &nbsp;·&nbsp; 06/08/2004
+                    </p>
+                    <p style="color: var(--text); line-height: 1.9; margin-bottom: 16px; font-size: 0.95rem;">
+                        Soy un desarrollador en formación apasionado por la creación de aplicaciones web modernas y funcionales,
+                        con especial interés en el desarrollo frontend y backend, combinando diseño y lógica para construir experiencias atractivas.
+                    </p>
+                    <p style="color: var(--text); line-height: 1.9; margin-bottom: 16px; font-size: 0.95rem;">
+                        Actualmente estudio Ingeniería de Sistemas en la Universidad del Cauca,
+                        donde he adquirido una sólida base en programación, algoritmos y estructuras de datos.
+                    </p>
+                    <p style="color: var(--text); line-height: 1.9; font-size: 0.95rem;">
+                        Mi objetivo es seguir creciendo como desarrollador, explorando nuevas tecnologías
+                        y contribuyendo a proyectos con impacto positivo en la sociedad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTUDIOS -->
+    <section id="estudios">
+        <div class="container">
+            <div class="titulo-wrapper animar">
+                <h2 class="seccion-titulo">Estudios</h2>
+                <span class="titulo-linea"></span>
+            </div>
+            <div class="table-responsive animar">
+                <table class="tablaEstudios">
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Institución</th>
+                            <th>Años</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Educación Escolar</th>
+                            <td>Institución Educativa Seminario</td>
+                            <td>2010 – 2021</td>
+                            <td>Ipiales, Nariño</td>
+                        </tr>
+                        <tr>
+                            <th>Educación Superior</th>
+                            <td>Universidad del Cauca</td>
+                            <td>2022 – 2026</td>
+                            <td>Popayán, Cauca</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+        <div class="container">
+            <div class="titulo-wrapper animar">
+                <h2 class="seccion-titulo">Mis Hobbies</h2>
+                <span class="titulo-linea"></span>
+            </div>
+
+            <div class="hobby-card animar">
+                <div class="mi-carrusel" id="carouselPasto">
+                    <div class="mi-carrusel-track">
+                        <img src="assets/img/h1.1.png" alt="Fútbol 1">
+                        <img src="assets/img/h1.2.png" alt="Fútbol 2">
+                        <img src="assets/img/h1.3.png" alt="Fútbol 3">
+                    </div>
+                    <button class="mi-carrusel-btn prev" onclick="moverCarrusel('carouselPasto', -1)">&#8249;</button>
+                    <button class="mi-carrusel-btn next" onclick="moverCarrusel('carouselPasto', 1)">&#8250;</button>
+                </div>
+                <div>
+                    <h5>Fútbol</h5>
+                    <div class="hobby-linea"></div>
+                    <p>Soy apasionado por el fútbol e hincha fiel del Deportivo Pasto. Sigo al equipo desde 2019 y disfruto ir al estadio a apoyarlos con la barra.</p>
+                </div>
+            </div>
+
+            <div class="hobby-card reverse animar">
+                <div>
+                    <h5>Gimnasio</h5>
+                    <div class="hobby-linea"></div>
+                    <p>Disfruto mucho de la actividad física, especialmente del entrenamiento de fuerza. El gimnasio es mi espacio para desafiarme y mejorar mi rendimiento día a día.</p>
+                </div>
+                <img src="assets/img/h2.png" alt="Gimnasio">
+            </div>
+
+            <div class="hobby-card animar">
+                <img src="assets/img/h3.png" alt="Boxeo">
+                <div>
+                    <h5>Boxeo</h5>
+                    <div class="hobby-linea"></div>
+                    <p>Me apasiona el boxeo, tanto practicarlo como ver peleas. Valoro la disciplina y la técnica que exige este deporte de contacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+        <div class="container">
+            <div class="titulo-wrapper animar">
+                <h2 class="seccion-titulo">Proyectos</h2>
+                <span class="titulo-linea"></span>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-md-4 animar">
+                    <div class="card-proyecto">
+                        <div>
+                            <p class="numero">01</p>
+                            <h5>Sistema de gestión de proyectos de grado</h5>
+                            <p>Sistema web para automatizar el seguimiento del proceso de trabajo de grado en la Universidad del Cauca, con gestión de roles, notificaciones y exportación de documentos.</p>
+                            <div>
+                                <span class="badge-tech">Spring Boot</span>
+                                <span class="badge-tech">MySQL</span>
+                                <span class="badge-tech">Java Swing</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-proyecto">
+                            <a href="https://github.com/SantiagoBastidas04/proyectoCursoMicroservicios" target="_blank" class="btn-github">
+                                Ver en GitHub <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 animar">
+                    <div class="card-proyecto">
+                        <div>
+                            <p class="numero">02</p>
+                            <h5>Sistema de agendamiento de citas</h5>
+                            <p>Sistema web para gestión de citas médicas de Piedrazul, con agendamiento autónomo por pacientes y configuración de disponibilidad de médicos y terapistas.</p>
+                            <div>
+                                <span class="badge-tech">Spring Boot</span>
+                                <span class="badge-tech">MySQL</span>
+                                <span class="badge-tech">Vue</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-proyecto">
+                            <a href="https://github.com/SantiagoBastidas04" target="_blank" class="btn-github">
+                                Ver en GitHub <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 animar">
+                    <div class="card-proyecto">
+                        <div>
+                            <p class="numero">03</p>
+                            <h5>Página web personal</h5>
+                            <p>Página web personal en versión nativa con secciones de inicio, estudios, pasatiempos, proyectos y contacto, incluyendo validación de formularios y carrusel en JavaScript.</p>
+                            <div>
+                                <span class="badge-tech">HTML</span>
+                                <span class="badge-tech">CSS</span>
+                                <span class="badge-tech">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-proyecto">
+                            <a href="https://github.com/SantiagoBastidas04/PaginaPresentacion" target="_blank" class="btn-github">
+                                Ver en GitHub <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <div class="container">
+            <div class="titulo-wrapper animar">
+                <h2 class="seccion-titulo">¡Contáctame!</h2>
+                <span class="titulo-linea"></span>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 animar">
+
+                    <form id="contactForm" novalidate>
+
+                        <div class="campo-flotante">
+                            <input class="campo-input" id="name" type="text" placeholder=" " required>
+                            <label class="campo-label" for="name">Nombre completo</label>
+                            <span class="campo-error">Ingresa tu nombre</span>
+                        </div>
+
+                        <div class="campo-flotante">
+                            <input class="campo-input" id="email" type="email" placeholder=" " required>
+                            <label class="campo-label" for="email">Correo electrónico</label>
+                            <span class="campo-error">Ingresa un correo válido</span>
+                        </div>
+
+                        <div class="campo-flotante">
+                            <input class="campo-input" id="phone" type="tel" placeholder=" " required>
+                            <label class="campo-label" for="phone">Número de teléfono</label>
+                            <span class="campo-error">Ingresa un número válido</span>
+                        </div>
+
+                        <div class="campo-flotante">
+                            <select class="campo-input campo-select" id="motivo" required>
+                                <option value="" disabled selected></option>
+                                <option value="trabajo">Oferta de trabajo</option>
+                                <option value="proyecto">Colaboración en proyecto</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <label class="campo-label" for="motivo">Motivo de contacto</label>
+                            <span class="campo-error">Selecciona un motivo</span>
+                        </div>
+
+                        <div class="campo-flotante">
+                            <textarea class="campo-input campo-textarea" id="message" placeholder=" " required></textarea>
+                            <label class="campo-label" for="message">Mensaje</label>
+                            <span class="campo-error">Escribe un mensaje</span>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <p class="campo-grupo-label">Preferencia de contacto</p>
+                            <div class="d-flex gap-4">
+                                <label class="campo-radio">
+                                    <input type="radio" name="preferencia" value="email" required>
+                                    <span>Correo</span>
+                                </label>
+                                <label class="campo-radio">
+                                    <input type="radio" name="preferencia" value="telefono">
+                                    <span>Teléfono</span>
+                                </label>
+                                <label class="campo-radio">
+                                    <input type="radio" name="preferencia" value="whatsapp">
+                                    <span>WhatsApp</span>
+                                </label>
+                            </div>
+                            <span class="campo-error" id="error-preferencia">Selecciona una preferencia</span>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label class="campo-checkbox">
+                                <input type="checkbox" id="terminos" required>
+                                <span>Acepto que mis datos sean usados para responder mi mensaje</span>
+                            </label>
+                            <span class="campo-error" id="error-terminos">Debes aceptar los términos</span>
+                        </div>
+
+                        <div class="mensaje-exito oculto" id="submitSuccessMessage">
+                            ¡Mensaje enviado correctamente!
+                        </div>
+                        <div class="mensaje-error-form oculto" id="submitErrorMessage">
+                            Por favor corrige los errores antes de enviar
+                        </div>
+
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </form>
+
+                    <div class="contacto-telefono">
+                        <i class="bi bi-phone"></i>
+                        <p>+57 318 643 3147</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Universidad del Cauca — Ingeniería de Sistemas</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
